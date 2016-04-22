@@ -27,7 +27,7 @@ function wrapper() {
     var self = window.plugin.ingressmaxfield;
     // custom dialog wrapper with more flexibility
     self.tooManyWait = function tooManyWait() {
-        alert("Too many portals found, only listing 50");
+        alert("Too many portals found, only listing 10000");
     };
     self.sleep = function sleep(milliseconds) {
         var start = new Date().getTime();
@@ -115,7 +115,7 @@ function wrapper() {
     };
 
     self.managePortals = function managePortals(obj, portal, x) {
-        if (obj.count <= 50) {
+        if (obj.count <= 10000) {
             if (self.inBounds(portal)) {
                 var str = self.genStr(portal, x);
                 obj.list.push(str);
@@ -137,7 +137,7 @@ function wrapper() {
                 self.managePortals(obj, window.portals[x], x);
             }
         }
-        obj.tooMany = obj.count < 50 ? false : true;
+        obj.tooMany = obj.count < 10000 ? false : true;
         return obj;
 
 
@@ -158,7 +158,7 @@ function wrapper() {
         $(".ui-dialog-buttonpane", dia).remove();
         dia.css("width", "600px").css("top", ($(window).height() - dia.height()) / 2).css("left", ($(window).width() - dia.width()) / 2);
         if (tooMany) {
-            alert("Too many portals visible, only showing 50!");
+            alert("Too many portals visible, only showing 10000!");
         }
         return dia;
     };
