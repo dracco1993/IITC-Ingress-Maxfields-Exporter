@@ -4,8 +4,8 @@
 // @category Information
 // @version 0.1.5.1
 // @namespace http://github.com/jonatkins/ingress-intel-total-conversion
-// @updateURL http://github.com/dracco1993/IITC-Ingress-Maxfields-Exporter/raw/master/IngressMaxFields.user.js
-// @downloadURL http://github.com/dracco1993/IITC-Ingress-Maxfields-Exporter/raw/master/IngressMaxFields.user.js
+// @updateURL http://github.com/dracco1993/IITC-Ingress-Maxfields-Exporter/raw/10000_portals/IngressMaxFields.user.js
+// @downloadURL http://github.com/dracco1993/IITC-Ingress-Maxfields-Exporter/raw/10000_portals/IngressMaxFields.user.js
 // @description Exports portals in the format for http://www.ingress-maxfield.com/ and allow direct transfer to site
 // @include https://www.ingress.com/intel*
 // @include http://www.ingress.com/intel*
